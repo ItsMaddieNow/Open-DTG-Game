@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.64705884}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.49019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -742,7 +742,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 0.8
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &449146120
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -773,8 +773,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonprefab: {fileID: 5005709325065382380, guid: 6753dd3a4ec0d39459d906f594d5c7f8, type: 3}
   Content: {fileID: 2008000049}
-  ButtonVerticalSize: 45
-  MainLevelLoader: {fileID: 0}
+  ButtonVerticalSize: 70
+  MainLevelLoader: {fileID: 1078522469}
 --- !u!224 &560288705 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6670880075864046154, guid: 25ab34b0cf85ccd4aae20c366935ff45, type: 3}

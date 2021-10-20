@@ -8,7 +8,7 @@ public class LoadMenu : MonoBehaviour
 {
     public ButtonData buttonprefab;
     public RectTransform Content;
-    public float ButtonVerticalSize = 45f;
+    public float ButtonVerticalSize = 70f;
     private string Savedirectory;
     public MainLevelLoad MainLevelLoader;
     public void Start()
