@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using System.Linq;
 
 public class LoadMenu : MonoBehaviour
 {
@@ -19,7 +20,10 @@ public class LoadMenu : MonoBehaviour
     public void Load() 
     {
         Directory.CreateDirectory(Savedirectory);
-        string[] Saves = Directory.GetDirectories(Savedirectory);
+
+        DirectoryInfo info = new DirectoryInfo(Savedirectory);
+        string[] Saves = info.EnumerateDirectories().OrderByDescending(d => (d.LastAccessTime)).ThenBy(d => (d.Name)).Select(d => (d.FullName)).ToArray();
+
         print("Starting loading");
         Content.sizeDelta = new Vector2(Content.sizeDelta.x,Saves.Length*ButtonVerticalSize);
         buttonprefab.SceneLoader.LoadManager = MainLevelLoader;
